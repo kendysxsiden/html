@@ -1,3 +1,4 @@
+/* Общий стиль для body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 /* Контейнер для галереи */
 .gallery {
     display: grid;
@@ -18,6 +20,7 @@ body {
     margin: 0 auto;
     padding: 10px;
 }
+
 /* Стили для каждого элемента (изображение + подпись) */
 .gallery figure {
     display: flex;
@@ -31,12 +34,14 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
+
 /* Стили для изображений */
 .gallery img {
     width: 100%; /* Занимает всю ширину контейнера */
     height: auto; /* Сохраняем пропорции */
     display: block;
 }
+
 /* Подпись под изображением */
 .gallery figcaption {
     font-size: 16px;

@@ -1,3 +1,6 @@
+/* Уникальные стили для страницы контактов */
+
+/* Центрирование формы */
 form {
     background-color: #f0f8ff;
     border: 1px solid #007BFF;
@@ -8,12 +11,14 @@ form {
     max-width: 400px; /* Устанавливаем максимальную ширину */
     margin: 50px auto; /* Центрируем форму */
 }
+
 /* Стили для текста */
 form label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 form input,
 form select,
 form textarea {
@@ -24,6 +29,7 @@ form textarea {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 /* Кнопка отправки */
 form button {
     background-color: #007BFF;
@@ -36,4 +42,7 @@ form button {
     font-size: 16px;
     text-align: center;
 }
+
 form button:hover {
+    background-color: #0056b3;
+}
