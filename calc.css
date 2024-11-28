@@ -1,68 +1,66 @@
-/* Общий стиль для body */
+/* Fully redesigned calculator styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    margin: 0;
 }
 
-/* Стиль для контейнера калькулятора */
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .calculator {
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-}
-
-/* Стиль для дисплея */
-.display {
-    background-color: #222;
-    color: #fff;
-    text-align: right;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
+    width: 350px;
 }
 
-/* Поле ввода */
 .display input {
     width: 100%;
-    border: none;
-    background: none;
-    color: white;
-    font-size: 24px;
-    outline: none;
-}
-
-/* Сетка кнопок */
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 10px;
-}
-
-/* Кнопки */
-.buttons button {
-    background-color: #007BFF;
-    color: white;
-    font-size: 20px;
-    border: none;
     padding: 15px;
-    border-radius: 5px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    background: #f0f0f0;
+    color: #333333;
+}
+
+.buttons button {
+    width: 22%;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    background: linear-gradient(120deg, #66a6ff, #89f7fe);
+    color: #ffffff;
+    transition: all 0.3s ease;
 }
 
 .buttons button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    transform: scale(1.05);
 }
 
 .buttons button:active {
-    background-color: #003f7f;
+    transform: scale(1);
+    background: #005f99;
 }
+
+.buttons button:last-child {
+    background: linear-gradient(120deg, #ff6a6a, #ff8c6a);
+}
+
